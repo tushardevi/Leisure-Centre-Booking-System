@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FBF51300-21F3-49B1-B67D-6BAC5FA672B2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>TotalFitness.My.MyApplication</StartupObject>
+    <RootNamespace>TotalFitness</RootNamespace>
+    <AssemblyName>TotalFitness</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TotalFitness.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TotalFitness.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Member_BookDateTime.Designer.vb">
+      <DependentUpon>Member_BookDateTime.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Member_BookDateTime.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffArea_EditExtra.Designer.vb">
+      <DependentUpon>StaffArea_EditExtra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StaffArea_EditExtra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffArea_AddNewStaff.Designer.vb">
+      <DependentUpon>StaffArea_AddNewStaff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StaffArea_AddNewStaff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffArea_AddNewFacility.Designer.VB">
+      <DependentUpon>StaffArea_AddNewFacility.VB</DependentUpon>
+    </Compile>
+    <Compile Include="StaffArea_AddNewFacility.VB">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member_MyBookings.Designer.vb">
+      <DependentUpon>Member_MyBookings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Member_MyBookings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member_MyDetails.Designer.vb">
+      <DependentUpon>Member_MyDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Member_MyDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPage.Designer.vb">
+      <DependentUpon>MainPage.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member_Login_Menu.Designer.vb">
+      <DependentUpon>Member_Login_Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Member_Login_Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member_BookFacility.Designer.vb">
+      <DependentUpon>Member_BookFacility.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Member_BookFacility.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrationForm.Designer.VB">
+      <DependentUpon>RegistrationForm.VB</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationForm.VB">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TotalFitnessRecords.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="StaffArea_EditDateTime.Designer.vb">
+      <DependentUpon>StaffArea_EditDateTime.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StaffArea_EditDateTime.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffArea_LogIn.Designer.VB">
+      <DependentUpon>StaffArea_LogIn.VB</DependentUpon>
+    </Compile>
+    <Compile Include="StaffArea_LogIn.VB">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffArea_AvailableFacilities.Designer.vb">
+      <DependentUpon>StaffArea_AvailableFacilities.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StaffArea_AvailableFacilities.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Member_BookDateTime.resx">
+      <DependentUpon>Member_BookDateTime.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffArea_EditExtra.resx">
+      <DependentUpon>StaffArea_EditExtra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffArea_AddNewStaff.resx">
+      <DependentUpon>StaffArea_AddNewStaff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffArea_AddNewFacility.resx">
+      <DependentUpon>StaffArea_AddNewFacility.VB</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPage.resx">
+      <DependentUpon>MainPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member_Login_Menu.resx">
+      <DependentUpon>Member_Login_Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member_MyBookings.resx">
+      <DependentUpon>Member_MyBookings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member_MyDetails.resx">
+      <DependentUpon>Member_MyDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member_BookFacility.resx">
+      <DependentUpon>Member_BookFacility.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrationForm.resx">
+      <DependentUpon>RegistrationForm.VB</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffArea_EditDateTime.resx">
+      <DependentUpon>StaffArea_EditDateTime.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffArea_LogIn.resx">
+      <DependentUpon>StaffArea_LogIn.VB</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffArea_AvailableFacilities.resx">
+      <DependentUpon>StaffArea_AvailableFacilities.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds-blank-blue-953214.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\65_3_1.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
